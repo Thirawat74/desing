@@ -305,7 +305,7 @@ const Admin = () => {
                 className="flex items-center justify-between"
               >
                 <div>
-                  <p className="font-bold text-primary">Manage Queue</p>
+                  <p className="font-bold text-blue">Manage Queue</p>
                   <h1 className="text-2xl font-bold">จัดการคิวลูกค้า</h1>
                 </div>
                 <motion.div

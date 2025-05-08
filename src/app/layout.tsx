@@ -19,7 +19,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#2B0561" />
+        <meta name="theme-color" content="blue" />
         <meta name="description" content="เว็บไซต์ XDVZ STUDIO" />
         <meta property="og:title" content="XDVZ STUDIO - หน้าหลัก" />
         <meta property="og:description" content="เว็บไซต์เช็คคิว" />
