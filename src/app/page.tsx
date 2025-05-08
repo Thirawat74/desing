@@ -33,7 +33,7 @@ export default function Home() {
               <AlertDialogHeader>
                 <AlertDialogTitle>เว็บนี้เอาไว้ทำอะไร ?</AlertDialogTitle>
                 <AlertDialogDescription>
-                  สวัสดีครับ ผมเจ้าของ XDVZ STUDIO เว็บนี้สร้างมาเพื่อเช็คคิวงานของคุณลูกค้าเพื่อให้ดูง่ายขึ้น
+                  สวัสดีครับ ผมเจ้าของ XDVZ STUDIO เว็บนี้สร้างมาเพื่อความสะดวกสบายเช็คคิวงานของคุณลูกค้าเพื่อให้ดูง่ายขึ้น
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>
