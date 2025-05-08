@@ -24,8 +24,7 @@ export function PaymentBadge({ payment }: PaymentBadgeProps) {
 
   return (
     <Badge className={`${badgeClass} px-2 py-1 transition-all duration-300`}>
-      <span className={`w-2 h-2 rounded-full inline-block mr-2 ${badgeColor}`}></span>
-      {payment}
+      <span className={`w-2 h-2 rounded-full inline-block ${badgeColor}`}></span>
     </Badge>
   )
 }
