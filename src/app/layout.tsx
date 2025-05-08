@@ -5,8 +5,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Xurora Store - หน้าหลัก",
-  description: "เว็บไซต์ร้าน Xurora Store",
+  title: "XDVZ STUDIO - หน้าหลัก",
+  description: "เว็บไซต์เช็คคิว",
 };
 
 export default function RootLayout({
@@ -20,9 +20,9 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#2B0561" />
-        <meta name="description" content="เว็บไซต์ร้าน Xurora Store" />
-        <meta property="og:title" content="Xurora Store - หน้าหลัก" />
-        <meta property="og:description" content="เว็บไซต์ร้าน Xurora Store" />
+        <meta name="description" content="เว็บไซต์ XDVZ STUDIO" />
+        <meta property="og:title" content="XDVZ STUDIO - หน้าหลัก" />
+        <meta property="og:description" content="เว็บไซต์เช็คคิว" />
         <meta property="og:image" content="https://m1r.ai/Svkx.png" />
         <meta name="twitter:card" content="https://m1r.ai/Svkx.png" />
         <link
