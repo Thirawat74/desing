@@ -23,8 +23,8 @@ export default function RootLayout({
         <meta name="description" content="เว็บไซต์ XDVZ STUDIO" />
         <meta property="og:title" content="XDVZ STUDIO - หน้าหลัก" />
         <meta property="og:description" content="เว็บไซต์เช็คคิว" />
-        <meta property="og:image" content="https://m1r.ai/Svkx.png" />
-        <meta name="twitter:card" content="https://m1r.ai/Svkx.png" />
+        <meta property="og:image" content="https://m1r.ai/FJpL.jpg" />
+        <meta name="twitter:card" content="https://m1r.ai/FJpL.jpg" />
         <link
           href="https://pro.fontawesome.com/releases/v5.15.0/css/all.css"
           rel="stylesheet"
