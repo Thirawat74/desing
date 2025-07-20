@@ -109,7 +109,7 @@ const PaymentCellActionsWrapper = ({}: { row: Row<Payment> }) => {
               <DrawerDescription>เลือกตัวเลือกที่ต้องการ</DrawerDescription>
             </DrawerHeader>
             <div className="px-4">
-              <Link href="https://discord.gg/ZDXEmc9zwG">
+              <Link href="https://discord.gg/6CgH2wtfuZ">
                 <Button variant="link" className="w-full mb-2">
                   เข้าร่วม Discord
                 </Button>
