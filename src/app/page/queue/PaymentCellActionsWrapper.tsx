@@ -34,7 +34,7 @@ import {
 // ✅ ใช้ type Payment เดียวกับ columns
 import type { Payment } from "./columns";
 
-const PaymentCellActionsWrapper = ({ row }: { row: Row<Payment> }) => {
+const PaymentCellActionsWrapper = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
