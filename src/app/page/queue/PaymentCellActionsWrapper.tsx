@@ -31,15 +31,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-export type Payment = {
-  id: number;
-  name: string;
-  amount: number;
-  status: string;
-  payment: string;
-};
+// ✅ ใช้ type Payment เดียวกับ columns
+import type { Payment } from "./columns";
 
-const PaymentCellActionsWrapper = ({}: { row: Row<Payment> }) => {
+const PaymentCellActionsWrapper = ({ row }: { row: Row<Payment> }) => {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -61,10 +56,12 @@ const PaymentCellActionsWrapper = ({}: { row: Row<Payment> }) => {
             <DropdownMenuLabel>รายละเอียด</DropdownMenuLabel>
             <DropdownMenuSeparator />
             <DropdownMenuItem>
-              <Link href="https://discord.gg/ZDXEmc9zwG">เข้าร่วม Discord</Link>
+              <Link href="https://discord.gg/ZDXEmc9zwG">
+                เข้าร่วม Discord
+              </Link>
             </DropdownMenuItem>
             <DropdownMenuItem onClick={openDialog}>
-              รายละเอียดการชำระเงิน
+              รายละเอียดเพิ่มเติม
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -72,9 +69,9 @@ const PaymentCellActionsWrapper = ({}: { row: Row<Payment> }) => {
         <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
           <DialogContent className="backdrop-blur-md">
             <DialogHeader>
-              <DialogTitle>รายละเอียดการชำระเงิน</DialogTitle>
+              <DialogTitle>รายละเอียด</DialogTitle>
               <DialogDescription>
-                นี่คือข้อมูลรายละเอียดการชำระเงินของคุณ
+                นี่คือรายละเอียดเพิ่มเติมของรายการนี้
               </DialogDescription>
             </DialogHeader>
             <div className="space-y-4">
@@ -115,7 +112,7 @@ const PaymentCellActionsWrapper = ({}: { row: Row<Payment> }) => {
                 </Button>
               </Link>
               <Button className="w-full" onClick={openDialog}>
-                รายละเอียดการชำระเงิน
+                รายละเอียดเพิ่มเติม
               </Button>
             </div>
             <DrawerFooter className="pt-2">
@@ -131,11 +128,10 @@ const PaymentCellActionsWrapper = ({}: { row: Row<Payment> }) => {
         <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
           <DialogContent className="backdrop-blur-md">
             <DialogHeader>
-              <DialogTitle>รายละเอียดการชำระเงิน</DialogTitle>
+              <DialogTitle>รายละเอียด</DialogTitle>
               <DialogDescription>
-                นี่คือข้อมูลรายละเอียดการชำระเงินของคุณ
+                นี่คือรายละเอียดเพิ่มเติมของรายการนี้
               </DialogDescription>
-              <search></search>
             </DialogHeader>
             <div className="space-y-4">
               <Image
