@@ -1,14 +1,13 @@
 import type { ColumnDef, Row } from "@tanstack/react-table"
 import PaymentCellActionsWrapper from "./PaymentCellActionsWrapper"
 import { StatusBadge } from "./status-badge"
-import { PaymentBadge } from "./payment-badge"
 
 export type Payment = {
   id: number
   name: string
   amount: number
   status: string
-  payment: string
+  // ❌ ลบ property payment เพราะไม่ใช้แล้ว
 }
 
 export const columns: ColumnDef<Payment>[] = [
@@ -26,6 +25,9 @@ export const columns: ColumnDef<Payment>[] = [
     header: "จำนวน",
     accessorKey: "amount",
     enableSorting: true,
+    cell: ({ row }) => (
+      <span>{row.original.amount.toLocaleString("th-TH")} ฿</span>
+    ),
   },
   {
     header: "สถานะ",
@@ -33,14 +35,6 @@ export const columns: ColumnDef<Payment>[] = [
     enableSorting: true,
     cell: ({ row }: { row: Row<Payment> }) => {
       return <StatusBadge status={row.original.status} />
-    },
-  },
-  {
-    header: "ชำระเงิน",
-    accessorKey: "payment",
-    enableSorting: true,
-    cell: ({ row }: { row: Row<Payment> }) => {
-      return <PaymentBadge payment={row.original.payment} />
     },
   },
   {
